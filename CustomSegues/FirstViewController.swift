@@ -29,10 +29,25 @@ class ViewController: UIViewController {
 
     func showSecondViewController() {
         self.performSegueWithIdentifier("idFirstSegue", sender: self)
+        
+        // Some Animation
+        let originalColor = self.view.backgroundColor
+        self.view.backgroundColor = UIColor.redColor()
+        
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            self.view.backgroundColor = originalColor
+        })
     }
     
     @IBAction func returnFromSegueActions(sender: UIStoryboardSegue){
-        
+        if sender.identifier == "idFirstSegueUnwind" {
+            let originalColor = self.view.backgroundColor
+            self.view.backgroundColor = UIColor.redColor()
+            
+            UIView.animateWithDuration(1.0, animations: { () -> Void in
+                self.view.backgroundColor = originalColor
+            })
+        }
     }
     
     override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
