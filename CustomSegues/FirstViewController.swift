@@ -39,6 +39,21 @@ class ViewController: UIViewController {
         })
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "idFirstSegue" {
+            let secondViewController = segue.destinationViewController as SecondViewController
+            secondViewController.message = "Hello from the 1st View Controller"
+            
+//            // Some Animation
+//            let originalColor = self.view.backgroundColor
+//            self.view.backgroundColor = UIColor.redColor()
+//            
+//            UIView.animateWithDuration(1.0, animations: { () -> Void in
+//                self.view.backgroundColor = originalColor
+//            })
+        }
+    }
+    
     @IBAction func returnFromSegueActions(sender: UIStoryboardSegue){
         if sender.identifier == "idFirstSegueUnwind" {
             let originalColor = self.view.backgroundColor
