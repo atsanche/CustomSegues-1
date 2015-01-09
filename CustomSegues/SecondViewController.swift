@@ -32,6 +32,13 @@ class SecondViewController: UIViewController {
 
     func showFirstViewController() {
         self.performSegueWithIdentifier("idFirstSegueUnwind", sender: self)
+        
+        let originalColor = self.view.backgroundColor
+        self.view.backgroundColor = UIColor.greenColor()
+        
+        UIView.animateWithDuration(1.0, animations: { () -> Void in
+            self.view.backgroundColor = originalColor;
+        })
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
