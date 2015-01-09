@@ -14,11 +14,20 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Swipe UP Gesture
+        var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showFirstViewController")
+        swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Up
+        self.view.addGestureRecognizer(swipeGestureRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func showFirstViewController() {
+        self.performSegueWithIdentifier("idSecondSegueUnwind", sender: self)
     }
     
 
@@ -31,5 +40,6 @@ class ThirdViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
 }

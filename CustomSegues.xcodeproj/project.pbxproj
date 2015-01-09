@@ -43,7 +43,7 @@
 		77779E481A5C28CB00C6D036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77779E491A5C28CB00C6D036 /* CustomSeguesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSeguesTests.swift; sourceTree = "<group>"; };
 		77779E531A5C3F2F00C6D036 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		77779E551A5C3F4B00C6D036 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		77779E551A5C3F4B00C6D036 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77779E571A5C43D400C6D036 /* FirstCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomSegue.swift; sourceTree = "<group>"; };
 		77779E591A5C43EA00C6D036 /* FirstCustomSegueUnwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomSegueUnwind.swift; sourceTree = "<group>"; };
 		77779E5B1A5C440400C6D036 /* SecondCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomSegue.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				77779E531A5C3F2F00C6D036 /* SecondViewController.swift */,
 				77779E551A5C3F4B00C6D036 /* ThirdViewController.swift */,
 				77779E371A5C28CB00C6D036 /* Main.storyboard */,
-				77779E5F1A5C442200C6D036 /* Segues */,
+				77779E5F1A5C442200C6D036 /* Segue Classes */,
 				77779E3A1A5C28CB00C6D036 /* Images.xcassets */,
 				77779E3C1A5C28CB00C6D036 /* LaunchScreen.xib */,
 				77779E311A5C28CB00C6D036 /* Supporting Files */,
@@ -127,7 +127,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		77779E5F1A5C442200C6D036 /* Segues */ = {
+		77779E5F1A5C442200C6D036 /* Segue Classes */ = {
 			isa = PBXGroup;
 			children = (
 				77779E571A5C43D400C6D036 /* FirstCustomSegue.swift */,
@@ -135,7 +135,7 @@
 				77779E5B1A5C440400C6D036 /* SecondCustomSegue.swift */,
 				77779E5D1A5C441800C6D036 /* SecondCustomSegueUnwind.swift */,
 			);
-			name = Segues;
+			name = "Segue Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +437,7 @@
 				77779E4F1A5C28CB00C6D036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77779E501A5C28CB00C6D036 /* Build configuration list for PBXNativeTarget "CustomSeguesTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +446,7 @@
 				77779E521A5C28CB00C6D036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
